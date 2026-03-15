@@ -1,32 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HK Hospital Test - Working!</title>
+    <title>HK Hospital - Dr. MD Rahen Faraz</title>
     <style>
-        body { font-family: Arial; text-align: center; padding: 50px; background: linear-gradient(45deg, #007bff, #28a745); color: white; }
-        .success { font-size: 3em; margin: 20px 0; }
-        .username { background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; margin: 20px; font-size: 1.5em; }
-        .next-steps { background: white; color: #333; margin: 40px auto; padding: 30px; max-width: 600px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        body { 
+            font-family: Arial; 
+            text-align: center; 
+            padding: 50px; 
+            background: linear-gradient(45deg, #007bff, #28a745, #007bff); 
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white; 
+            min-height: 100vh;
+            margin: 0;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .welcome { 
+            font-size: 3.5em; 
+            margin: 20px 0; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: wave 2s ease-in-out infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+        .doctor-name { 
+            background: rgba(255,255,255,0.2); 
+            padding: 25px; 
+            border-radius: 15px; 
+            margin: 30px auto; 
+            font-size: 2.2em; 
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .status { 
+            font-size: 1.8em; 
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .domain-display {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 500px;
+            font-family: monospace;
+            font-size: 1.3em;
+        }
+        .hands {
+            font-size: 4em;
+            margin: 20px 0;
+            animation: waveHands 3s ease-in-out infinite;
+        }
+        @keyframes waveHands {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-10deg); }
+            75% { transform: rotate(10deg); }
+        }
+        .live-badge {
+            background: #28a745;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px;
+            box-shadow: 0 5px 15px rgba(40,167,69,0.4);
+        }
     </style>
 </head>
 <body>
-    <div class="success">✅ GitHub Pages WORKING!</div>
+    <div class="hands">👋</div>
     
-    <h1>HK Hospital Website Ready</h1>
-    <p>Your hospital site foundation is live!</p>
+    <div class="welcome">✅ HK Hospital LIVE!</div>
     
-    <div class="username">
-        Current URL: <strong id="url"></strong>
+    <h1 style="font-size: 2.5em; margin-bottom: 10px;">Welcome to</h1>
+    <div class="doctor-name">
+        Dr. MD Rahen Faraz
     </div>
     
-    <div class="next-steps">
-        <h3>🎉 Next 3 Steps:</h3>
-        <ol>
-            <li><strong>Buy Domain</strong>: hkhospital.in (₹100 Hostinger)</li>
-            <li><strong>Add DNS</strong>: Point to GitHub IPs</li>
-            <li><strong>Replace</strong>: Upload full hospital site</li>
-        </ol>
-        <p><strong>Timeline:</strong> 1 hour → hkhospital.in live!</p>
+    <div class="status">Your Hospital Website is Live!</div>
+    
+    <div class="live-badge">hkhospital.in</div>
+    
+    <div class="domain-display">
+        Current URL: <strong id="url"></strong>
     </div>
 
     <script>
