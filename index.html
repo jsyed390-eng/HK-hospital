@@ -18,7 +18,7 @@
         .nav-links a:hover { color: #1e3a8a; }
         .cta-btn { background: linear-gradient(45deg, #1e3a8a, #3b82f6); color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
         .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(30,58,138,0.4); }
-        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('hero-bg.jpg'); background-size: contain !important; background-position: center top !important; background-repeat: no-repeat !important; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero {     height: 100vh;     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('hero-bg.jpg');     background-size: cover;     background-position: center center;     background-repeat: no-repeat;     display: flex;     align-items: center;     justify-content: center;     text-align: center;     color: white; }
         .hero-content h1 { font-size: clamp(3rem, 8vw, 5rem); font-weight: 700; margin-bottom: 1rem; }
         .hero-content p { font-size: clamp(1.1rem, 3vw, 1.6rem); margin-bottom: 2rem; max-width: 700px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
@@ -31,7 +31,7 @@
         .cta { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 100px 0; text-align: center; }
         footer { background: #1e3a8a; color: white; padding: 4rem 0 1rem; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
-        @media (max-width: 768px) { .nav-links { display: none; } }
+        @media (max-width: 768px) {     .nav-links {         display: none;     }      .hero {         background-size: 100% auto;         background-position: top center;     } }
     </style>
 </head>
 <body>
