@@ -54,8 +54,19 @@
         .hero-content p { font-size: clamp(1.1rem, 3vw, 1.6rem); margin-bottom: 2rem; max-width: 700px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         .section-title { text-align: center; font-size: 2.8rem; color: #1e3a8a; margin: 4rem 0 3rem; }
-        .services-grid, .doctors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .service-card, .doctor-card { background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; }
+        .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+        .service-card, .doctor-card {     background: white;     padding: 2rem;     border-radius: 20px;     box-shadow: 0 10px 40px rgba(0,0,0,0.08);     transition: all 0.3s;     text-align: center; }  .doctor-card {     display: flex;     flex-direction: column;     justify-content: flex-start;     align-items: center; }  .doctor-card h3 {     margin-top: 0.5rem;     margin-bottom: 0.5rem;     font-size: 1.4rem; }  .doctor-card p {     width: 100%;     text-align: center;     font-size: 0.95rem;     line-height: 1.6;     margin-bottom: 0.75rem;     word-break: break-word; }
         .service-card:hover, .doctor-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(0,0,0,0.15); }
         .service-icon { font-size: 3.5rem; color: #3b82f6; margin-bottom: 1.5rem; }
         .doctor-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 5px solid #3b82f6; }
@@ -91,28 +102,26 @@
 
     .doctors-grid {
         grid-template-columns: 1fr;
-        gap: 1.25rem;
+    gap: 1.5rem;
     }
 
     .doctor-card {
-        padding: 1.5rem 1rem;
-        text-align: center;
+         padding: 1.5rem 1rem;
     }
 
     .doctor-img {
         width: 110px;
-        height: 110px;
-        margin-bottom: 0.75rem;
+    height: 110px;
+    margin: 0 auto 1rem;
     }
 
     .doctor-card h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .doctor-card p {
-        font-size: 0.82rem;
-        line-height: 1.5;
-        margin-bottom: 0.6rem;
+        font-size: 0.9rem;
+    line-height: 1.5;
     }
 }
     </style>
