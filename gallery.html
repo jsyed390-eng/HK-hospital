@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | HK Hospital</title>
+<title>Gallery | HK Hospital Gadwal</title>
 
 
 <!-- Bootstrap -->
@@ -32,9 +32,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <body>
 
 
-<!-- ========================================= -->
+<!-- ============================= -->
 <!-- NAVBAR -->
-<!-- ========================================= -->
+<!-- ============================= -->
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -43,24 +43,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <div class="container">
 
 
-<a class="navbar-brand" href="index.html">
+<a class="navbar-brand d-flex align-items-center"
+href="index.html">
 
-<img src="images/logo-white.png"
-height="50">
 
+<img src="hero-logo.jpg"
+height="50"
+class="me-2"
+alt="HK Hospital Logo">
+
+
+<span>
 HK Hospital
+</span>
+
 
 </a>
 
 
 
 <button class="navbar-toggler"
+type="button"
 data-bs-toggle="collapse"
 data-bs-target="#navbarMenu">
 
+
 <span class="navbar-toggler-icon"></span>
 
+
 </button>
+
 
 
 
@@ -72,42 +84,48 @@ id="navbarMenu">
 
 
 <li class="nav-item">
-<a class="nav-link" href="index.html">
+<a class="nav-link"
+href="index.html">
 Home
 </a>
 </li>
 
 
 <li class="nav-item">
-<a class="nav-link" href="doctors.html">
+<a class="nav-link"
+href="doctors.html">
 Doctors
 </a>
 </li>
 
 
 <li class="nav-item">
-<a class="nav-link" href="services.html">
+<a class="nav-link"
+href="services.html">
 Services
 </a>
 </li>
 
 
 <li class="nav-item">
-<a class="nav-link active" href="gallery.html">
+<a class="nav-link active"
+href="gallery.html">
 Gallery
 </a>
 </li>
 
 
 <li class="nav-item">
-<a class="nav-link" href="appointment.html">
+<a class="nav-link"
+href="appointment.html">
 Appointment
 </a>
 </li>
 
 
 <li class="nav-item">
-<a class="nav-link" href="contact.html">
+<a class="nav-link"
+href="contact.html">
 Contact
 </a>
 </li>
@@ -121,13 +139,16 @@ Contact
 
 </div>
 
+
 </nav>
 
 
 
-<!-- ========================================= -->
+
+
+<!-- ============================= -->
 <!-- HERO SECTION -->
-<!-- ========================================= -->
+<!-- ============================= -->
 
 
 <section class="gallery-hero">
@@ -137,12 +158,12 @@ Contact
 
 
 <h1>
-Hospital Gallery
+HK Hospital Gallery
 </h1>
 
 
 <p>
-A glimpse of our hospital facilities, doctors and healthcare services
+Explore our hospital facilities, specialists and healthcare services
 </p>
 
 
@@ -155,9 +176,10 @@ A glimpse of our hospital facilities, doctors and healthcare services
 
 
 
-<!-- ========================================= -->
-<!-- GALLERY FILTER BUTTONS -->
-<!-- ========================================= -->
+
+<!-- ============================= -->
+<!-- FILTER BUTTONS -->
+<!-- ============================= -->
 
 
 <section class="section-padding">
@@ -201,47 +223,73 @@ Facilities
 </button>
 
 
-<button class="btn btn-outline-primary filter-btn"
-data-filter="event">
-
-Events
-
-</button>
-
-
 </div>
 
 
 
 
 
-<!-- ========================================= -->
+<!-- ============================= -->
 <!-- IMAGE GALLERY -->
-<!-- ========================================= -->
+<!-- ============================= -->
 
 
 <div class="row g-4">
 
 
 
+<!-- Hospital Images -->
+
+
 <div class="col-lg-4 col-md-6 gallery-item hospital">
 
 
-<img src="images/gallery/hospital1.jpg"
+<img src="HK-services.jpg"
 class="img-fluid rounded shadow"
-alt="Hospital">
+alt="HK Hospital Services">
 
 
 </div>
 
 
 
+
 <div class="col-lg-4 col-md-6 gallery-item hospital">
 
 
-<img src="images/gallery/hospital2.jpg"
+<img src="Hk-hospital-surgery.jpg"
 class="img-fluid rounded shadow"
-alt="Hospital">
+alt="HK Hospital Surgery">
+
+
+</div>
+
+
+
+
+
+
+<!-- Doctor Images -->
+
+
+<div class="col-lg-4 col-md-6 gallery-item doctor">
+
+
+<img src="hero-rehan.jpg"
+class="img-fluid rounded shadow"
+alt="Dr MD Rehan Faraz">
+
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 gallery-item doctor">
+
+
+<img src="hero-mahe.jpg"
+class="img-fluid rounded shadow"
+alt="Dr Shaik Mehatab Zabeen">
 
 
 </div>
@@ -252,9 +300,9 @@ alt="Hospital">
 <div class="col-lg-4 col-md-6 gallery-item doctor">
 
 
-<img src="images/gallery/doctors.jpg"
+<img src="hero-abhi.jpg"
 class="img-fluid rounded shadow"
-alt="Doctors">
+alt="Dr MR Abhinesh">
 
 
 </div>
@@ -262,15 +310,17 @@ alt="Doctors">
 
 
 
-<div class="col-lg-4 col-md-6 gallery-item facility">
+<div class="col-lg-4 col-md-6 gallery-item doctor">
 
 
-<img src="images/gallery/facilities.jpg"
+<img src="hero-4thdoc.jpg"
 class="img-fluid rounded shadow"
-alt="Facilities">
+alt="Dr Sai Aakanksh">
 
 
 </div>
+
+
 
 
 
@@ -286,9 +336,11 @@ alt="Facilities">
 
 
 
-<!-- ========================================= -->
+
+
+<!-- ============================= -->
 <!-- VIDEO GALLERY -->
-<!-- ========================================= -->
+<!-- ============================= -->
 
 
 <section class="section-padding bg-light">
@@ -306,11 +358,12 @@ Hospital Video Tour
 
 
 <p>
-Explore our modern healthcare facilities
+Experience our healthcare facilities
 </p>
 
 
 </div>
+
 
 
 
@@ -321,10 +374,13 @@ Explore our modern healthcare facilities
 
 
 <video controls
+autoplay
+muted
+loop
 class="w-100 rounded shadow">
 
 
-<source src="videos/hospital-tour.mp4"
+<source src="hero-video.mp4"
 type="video/mp4">
 
 
@@ -349,9 +405,11 @@ Your browser does not support video.
 
 
 
-<!-- ========================================= -->
-<!-- CALL TO ACTION -->
-<!-- ========================================= -->
+
+
+<!-- ============================= -->
+<!-- CTA -->
+<!-- ============================= -->
 
 
 <section class="cta-section">
@@ -361,12 +419,12 @@ Your browser does not support video.
 
 
 <h2>
-Experience Quality Healthcare
+Your Health Is Our Priority
 </h2>
 
 
 <p>
-Book your appointment with our specialists today.
+Book your appointment with our specialist doctors today.
 </p>
 
 
@@ -375,6 +433,15 @@ Book your appointment with our specialists today.
 class="btn btn-light btn-lg">
 
 Book Appointment
+
+</a>
+
+
+
+<a href="https://wa.me/917893694556"
+class="btn btn-success btn-lg">
+
+WhatsApp Us
 
 </a>
 
@@ -388,22 +455,35 @@ Book Appointment
 
 
 
-<!-- ========================================= -->
+
+
+<!-- ============================= -->
 <!-- FOOTER -->
-<!-- ========================================= -->
+<!-- ============================= -->
 
 
 <footer class="footer">
 
 
-<div class="container text-center">
+<div class="container">
 
 
-<p>
+<div class="text-center">
 
-© 2026 HK Hospital. All Rights Reserved.
+
+<img src="hero-logo.jpg"
+height="70"
+alt="HK Hospital Logo">
+
+
+<p class="mt-3">
+
+© 2026 HK Hospital Gadwal. All Rights Reserved.
 
 </p>
+
+
+</div>
 
 
 </div>
@@ -414,25 +494,37 @@ Book Appointment
 
 
 
-<!-- Floating WhatsApp -->
+
+
+<!-- FLOATING WHATSAPP -->
+
 
 <a href="https://wa.me/917893694556"
 class="floating-whatsapp">
 
+
 <i class="fab fa-whatsapp"></i>
+
 
 </a>
 
 
 
-<!-- Floating Call -->
+
+
+<!-- FLOATING CALL -->
+
 
 <a href="tel:+917893694556"
 class="floating-call">
 
+
 <i class="fas fa-phone"></i>
 
+
 </a>
+
+
 
 
 
@@ -440,7 +532,9 @@ class="floating-call">
 
 
 <script src="js/main.js"></script>
+
 <script src="js/gallery.js"></script>
+
 
 
 </body>
