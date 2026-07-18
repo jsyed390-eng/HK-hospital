@@ -1,0 +1,513 @@
+/* ==========================================
+   LARGE LAPTOPS (1400px+)
+========================================== */
+
+@media (min-width:1400px){
+
+.container{
+
+max-width:1320px;
+
+}
+
+.hero-content h1{
+
+font-size:78px;
+
+}
+
+.section-title h2{
+
+font-size:52px;
+
+}
+
+}
+
+
+/* ==========================================
+   LAPTOPS
+========================================== */
+
+@media (max-width:1200px){
+
+.hero-content h1{
+
+font-size:58px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.service-card{
+
+padding:30px;
+
+}
+
+.highlight-box{
+
+padding:30px;
+
+}
+
+}
+
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width:992px){
+
+.section-padding{
+
+padding:80px 0;
+
+}
+
+.navbar{
+
+background:#ffffff;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.navbar-nav{
+
+margin-top:20px;
+
+text-align:center;
+
+}
+
+.nav-link{
+
+margin:12px 0;
+
+}
+
+.hero{
+
+height:auto;
+
+padding:130px 0 80px;
+
+}
+
+.hero-content{
+
+text-align:center;
+
+}
+
+.hero-content h1{
+
+font-size:48px;
+
+}
+
+.hero-content p{
+
+margin:auto;
+
+margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-features{
+
+justify-content:center;
+
+margin-top:30px;
+
+}
+
+.appointment-card{
+
+margin-top:50px;
+
+}
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+.why-us img{
+
+margin-bottom:40px;
+
+}
+
+.feature-item{
+
+margin-bottom:30px;
+
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.section-padding{
+
+padding:70px 0;
+
+}
+
+.hero{
+
+padding-top:110px;
+
+}
+
+.hero-content h5{
+
+font-size:15px;
+
+}
+
+.hero-content h1{
+
+font-size:38px;
+
+line-height:1.2;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+}
+
+.hero-features{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+.highlight-box{
+
+margin-bottom:20px;
+
+}
+
+.service-card{
+
+padding:25px;
+
+}
+
+.service-card h4{
+
+font-size:22px;
+
+}
+
+.doctor-card img{
+
+height:280px;
+
+}
+
+.cta-section{
+
+padding:70px 20px;
+
+}
+
+.cta-section h2{
+
+font-size:34px;
+
+}
+
+.cta-section p{
+
+font-size:17px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer .col-lg-2,
+
+.footer .col-lg-3,
+
+.footer .col-lg-4{
+
+margin-bottom:40px;
+
+}
+
+.floating-whatsapp{
+
+width:55px;
+
+height:55px;
+
+font-size:24px;
+
+right:15px;
+
+bottom:85px;
+
+}
+
+.floating-call{
+
+width:55px;
+
+height:55px;
+
+font-size:22px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+#scrollTop{
+
+width:50px;
+
+height:50px;
+
+left:15px;
+
+bottom:15px;
+
+}
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:576px){
+
+.hero-content h1{
+
+font-size:30px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
+
+.hero-content h5{
+
+font-size:13px;
+
+letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+}
+
+.service-card{
+
+padding:20px;
+
+}
+
+.service-card i{
+
+width:70px;
+
+height:70px;
+
+font-size:28px;
+
+}
+
+.highlight-box{
+
+padding:25px;
+
+}
+
+.highlight-box h2{
+
+font-size:34px;
+
+}
+
+.doctor-card img{
+
+height:240px;
+
+}
+
+.appointment-card{
+
+padding:25px;
+
+}
+
+.testimonial-card{
+
+padding:30px 20px;
+
+}
+
+.gallery-preview img{
+
+height:180px;
+
+}
+
+.map-section iframe{
+
+height:300px;
+
+}
+
+.footer{
+
+padding:60px 0 20px;
+
+}
+
+.footer h5{
+
+font-size:20px;
+
+}
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL DEVICES
+========================================== */
+
+@media (max-width:400px){
+
+.hero-content h1{
+
+font-size:26px;
+
+}
+
+.hero-buttons .btn{
+
+font-size:15px;
+
+padding:12px;
+
+}
+
+.hero-features{
+
+font-size:14px;
+
+}
+
+.service-card h4{
+
+font-size:20px;
+
+}
+
+.section-title h2{
+
+font-size:24px;
+
+}
+
+.highlight-box i{
+
+font-size:40px;
+
+}
+
+.highlight-box h2{
+
+font-size:28px;
+
+}
+
+}
+
+
+/* ==========================================
+   LANDSCAPE MOBILE
+========================================== */
+
+@media (max-height:500px){
+
+.hero{
+
+height:auto;
+
+padding:120px 0 80px;
+
+}
+
+.hero-content{
+
+padding-top:20px;
+
+}
+
+}
